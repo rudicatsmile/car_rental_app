@@ -25,8 +25,7 @@ Route::get('/', function () {
 });
 
 Route::resource('user', UserController::class);
-Route::resource('category', \App\Http\Controllers\CategoryController::class);
-Route::resource('product', \App\Http\Controllers\ProductController::class);
+
 
 Route::resource('car_data', \App\Http\Controllers\CarDataController::class);
 Route::resource('rent', \App\Http\Controllers\RentController::class);

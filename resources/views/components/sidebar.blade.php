@@ -1,7 +1,7 @@
 <div class="main-sidebar sidebar-style-2">
     <aside id="sidebar-wrapper">
         <div class="sidebar-brand">
-            <a href="index.html">Onlineshop Bersama</a>
+            <a href="index.html">Car rental Application</a>
         </div>
         <div class="sidebar-brand sidebar-brand-sm">
             <a href="index.html">St</a>
@@ -33,30 +33,7 @@
                 </ul>
             </li>
 
-            <li class="nav-item dropdown ">
-                <a href="#"
-                    class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Categories</span></a>
-                <ul class="dropdown-menu">
-                    <li class='{{ Request::is('dashboard-general-dashboard') ? 'active' : '' }}'>
-                        <a class="nav-link"
-                            href="{{ route('category.index') }}">All Category</a>
-                    </li>
-                   
-                </ul>
-            </li>
-
-            <li class="nav-item dropdown ">
-                <a href="#"
-                    class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Products</span></a>
-                <ul class="dropdown-menu">
-                    <li class='{{ Request::is('dashboard-general-dashboard') ? 'active' : '' }}'>
-                        <a class="nav-link"
-                            href="{{ route('product.index') }}">All Product</a>
-                    </li>
-                   
-                </ul>
-            </li>
-
+           
            
             <li class="nav-item dropdown ">
                 <a href="#"
