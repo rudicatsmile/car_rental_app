@@ -30,7 +30,7 @@
 
 
                 <div class="card">
-                    <form action="{{ route('giveback.save', $cars) }}" method="POST">
+                    <form action="{{ route('giveback.store', $cars) }}" method="POST">
                         @csrf
                         @method('PUT')
                         <div class="card-header">

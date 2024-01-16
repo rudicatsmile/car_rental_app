@@ -20,9 +20,11 @@ class GivebackController extends Controller
         $data = $request->all();
         $plat_no = $data['plat_no'];
                
-        $cars = CarData::findOrFail($plat_no);
+        //$cars = CarData::findOrFail($plat_no);
+        $cars = CarData::where('plat_no', '=', $plat_no)->firstOrFail();    
 
-        dd($plat_no);
+
+        //dd($plat_no);
 
         // return redirect()->route('pages.giveback.edit');
         return view('pages.giveback.edit', compact('cars'));
